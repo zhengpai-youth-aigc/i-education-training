@@ -27,6 +27,13 @@
     .tag-dark { background: #37352f; color: #fff; }
     .tag-light { background: #f7f6f3; color: #444444; border: 1px solid #e9e9e7; }
     h2 { font-size: 24px; font-weight: 600; margin: 48px 0 16px; color: #1a1a1a; padding-top: 40px; border-top: 1px solid #e9e9e7; }
+    .update-banner { background: #fffaf5; border: 1px solid #f0d9c8; border-radius: 8px; padding: 16px 20px; margin-bottom: 32px; }
+    .update-banner-title { font-size: 12px; font-weight: 600; color: #d46a2f; text-transform: uppercase; letter-spacing: 0.08em; margin-bottom: 10px; }
+    .update-item { display: flex; gap: 12px; padding: 6px 0; border-bottom: 1px solid #f0e0d0; }
+    .update-item:last-child { border-bottom: none; padding-bottom: 0; }
+    .update-date { font-size: 12px; color: #9b9a97; flex-shrink: 0; min-width: 60px; }
+    .update-tag { display: inline-block; font-size: 11px; font-weight: 600; padding: 1px 6px; background: #f7f6f3; border: 1px solid #e9e9e7; border-radius: 3px; color: #555; flex-shrink: 0; margin-right: 8px; }
+    .update-text { font-size: 13px; color: #333; }
     .course-item { display: flex; align-items: center; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid #f0efe9; text-decoration: none; color: inherit; }
     .course-item:hover { text-decoration: none; }
     .course-item:hover .course-title { color: #d46a2f; }
@@ -82,6 +89,25 @@
       <span class="tag tag-light">Skills</span>
     </div>
 
+    <div class="update-banner">
+      <div class="update-banner-title">📝 最近更新</div>
+      <div class="update-item">
+        <span class="update-date">3月30日</span>
+        <span class="update-tag">新增</span>
+        <span class="update-text">第五课 · Skills：Skills是什么、与Prompt/MCP的区别、安装方法</span>
+      </div>
+      <div class="update-item">
+        <span class="update-date">3月30日</span>
+        <span class="update-tag">更新</span>
+        <span class="update-text">第二课新增：定时任务、Skills管理、全局规则、推理深度档位</span>
+      </div>
+      <div class="update-item">
+        <span class="update-date">3月30日</span>
+        <span class="update-tag">新增</span>
+        <span class="update-text">第四课 · Agent：用大白话解释Agent是什么、为什么非做不可</span>
+      </div>
+    </div>
+
     <h2>课程目录</h2>
     <a href="lesson-01.html" class="course-item">
       <div class="course-left">
@@ -117,8 +143,18 @@
       <div class="course-left">
         <span class="course-num">04</span>
         <div>
-          <div class="course-title">Agent、Skills：AI的关键词</div>
+          <div class="course-title">Agent是什么？为什么一定要做？</div>
           <div class="course-desc">通俗解释 · 面向零基础 · 无技术术语</div>
+        </div>
+      </div>
+      <span class="course-arrow">→</span>
+    </a>
+    <a href="lesson-05.html" class="course-item">
+      <div class="course-left">
+        <span class="course-num">05</span>
+        <div>
+          <div class="course-title">Skills是什么？怎么用？</div>
+          <div class="course-desc">Skills入门 · 实战案例 · 安装与使用</div>
         </div>
       </div>
       <span class="course-arrow">→</span>
