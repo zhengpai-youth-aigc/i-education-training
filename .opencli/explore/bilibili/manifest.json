@@ -1,0 +1,16 @@
+{
+  "site": "bilibili",
+  "target_url": "https://www.bilibili.com/v/popular/rank?proj=AI",
+  "final_url": "https://www.bilibili.com/v/popular/rank/all?proj=AI",
+  "title": "哔哩哔哩排行榜",
+  "framework": {
+    "nextjs": false,
+    "nuxt": false,
+    "react": false,
+    "vue2": true,
+    "vue3": false
+  },
+  "stores": [],
+  "top_strategy": "public",
+  "explored_at": "2026-03-31T11:21:13.815Z"
+}

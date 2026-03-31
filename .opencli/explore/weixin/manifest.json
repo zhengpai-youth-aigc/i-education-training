@@ -1,0 +1,16 @@
+{
+  "site": "weixin",
+  "target_url": "https://weixin.sogou.com/weixin?type=2&query=%E9%87%8F%E5%AD%90%E4%BD%8D&ie=utf8",
+  "final_url": "https://weixin.sogou.com/weixin?type=2&query=%E9%87%8F%E5%AD%90%E4%BD%8D&ie=utf8",
+  "title": "量子位的相关微信公众号文章 – 搜狗微信搜索",
+  "framework": {
+    "nextjs": false,
+    "nuxt": false,
+    "react": false,
+    "vue2": false,
+    "vue3": false
+  },
+  "stores": [],
+  "top_strategy": "public",
+  "explored_at": "2026-03-31T12:11:37.120Z"
+}
