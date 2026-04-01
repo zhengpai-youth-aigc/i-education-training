@@ -133,3 +133,35 @@ Created the /trellis:generate-page command in Claude and Cursor command director
 ### Next Steps
 
 - None - task complete
+
+
+## Session 5: Merge main style refresh into Trellis branch
+
+**Date**: 2026-04-01
+**Task**: Merge main style refresh into Trellis branch
+
+### Summary
+
+Merged the latest main branch style refresh into a new integration branch, preserved Trellis and resource-page additions, fixed progress total consistency, synced docs mirror, and updated frontend specs.
+
+### Main Changes
+
+
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `b97eba6` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete

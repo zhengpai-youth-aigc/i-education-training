@@ -8,7 +8,7 @@
 
 <!-- @@@auto:current-status -->
 - **Active File**: `journal-1.md`
-- **Total Sessions**: 4
+- **Total Sessions**: 5
 - **Last Active**: 2026-04-01
 <!-- @@@/auto:current-status -->
 
@@ -19,7 +19,7 @@
 <!-- @@@auto:active-documents -->
 | File | Lines | Status |
 |------|-------|--------|
-| `journal-1.md` | ~135 | Active |
+| `journal-1.md` | ~167 | Active |
 <!-- @@@/auto:active-documents -->
 
 ---
@@ -29,6 +29,7 @@
 <!-- @@@auto:session-history -->
 | # | Date | Title | Commits |
 |---|------|-------|---------|
+| 5 | 2026-04-01 | Merge main style refresh into Trellis branch | `b97eba6` |
 | 4 | 2026-04-01 | 新增 close-task 收尾命令 | `e84d01a` |
 | 3 | 2026-04-01 | 测试 generate-page 并生成 RTK 配置教程页 | `de5d66d` |
 | 2 | 2026-04-01 | Add adaptive generate-page command | `0bff8d0` |
