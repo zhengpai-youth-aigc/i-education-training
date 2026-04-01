@@ -30,6 +30,8 @@ That makes manual consistency especially important.
 - Reuse existing CSS classes and content block structures where possible
 - Keep interactive JavaScript small, explicit, and colocated with the page it controls
 - Verify that navigation, search, and progress behavior still work after edits
+- When search data contains non-lesson entries, verify the result labels and click-to-close behavior still work for both lesson and resource/tool pages
+- If progress is tracked across multiple lesson/resource pages, keep the `ai-course-progress` total consistent wherever that value is rendered or written
 - If a page is meant to ship in both environments, keep `docs/` aligned with the finalized `public/` page
 
 ---

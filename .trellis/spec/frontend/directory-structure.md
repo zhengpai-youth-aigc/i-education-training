@@ -21,18 +21,22 @@ In practice, new content may be added to `public/` without immediately being cop
 public/
 ├── index.html
 ├── lesson-01.html ... lesson-07.html
+├── rtk-install-guide.html
 ├── student-guide.html
 ├── codex-first-lesson.html
 ├── styles.css
+├── brand-logo.svg
 └── screenshots/
     └── *
 
 docs/
 ├── index.html
 ├── lesson-01.html ... lesson-07.html
+├── rtk-install-guide.html
 ├── student-guide.html
 ├── codex-first-lesson.html
 ├── styles.css
+├── brand-logo.svg
 └── screenshots/
     └── *
 ```

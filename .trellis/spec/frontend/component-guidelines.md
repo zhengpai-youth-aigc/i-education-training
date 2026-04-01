@@ -23,6 +23,9 @@ Most course pages are built from the same major blocks:
 - content blocks such as `.card`, `.step-box`, `.scenario-card`, `.resource-card`
 - navigation helpers such as `.bottom-nav`
 - search UI such as `.search-trigger`, `.search-overlay`, `.search-input`
+- sidebar home-link/menu controls such as `.sidebar-logo-link` and `.sidebar-toggle`
+- homepage-only hero and dashboard blocks such as `.hero-shell`, `.brand-mark`, `.update-banner`, and `.site-progress`
+- mixed catalog entries such as `.course-item.non-lesson` for resource/tool pages surfaced alongside lessons
 
 When extending a lesson page, prefer copying an existing section pattern and changing only the content.
 

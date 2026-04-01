@@ -47,6 +47,9 @@ Examples:
 - lesson completion writes in `public/lesson-01.html` through `public/lesson-07.html`
 - homepage progress rendering in `public/index.html`
 
+When progress is shown in multiple places, keep the total lesson/resource count consistent across every page that reads or writes the same key.
+If a resource page is counted as part of the learning path, update both the homepage summary and the per-page completion scripts together.
+
 ---
 
 ## When to Use Global State

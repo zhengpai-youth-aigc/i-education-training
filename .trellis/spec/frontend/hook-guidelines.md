@@ -35,7 +35,9 @@ Interactive features such as search and progress operate entirely in the browser
 Examples:
 - Search uses a hardcoded `lessons` array in `public/index.html`
 - Search follows the same pattern in lesson pages such as `public/lesson-01.html` and `public/lesson-07.html`
+- Search data may include non-lesson entries such as resource pages and tool pages, and the result tag rendering must handle both numbered lessons and string labels
 - Progress reads and writes `localStorage` in lesson pages such as `public/lesson-02.html`
+- Sidebar interactions on the refreshed layout use a dedicated `.sidebar-toggle` button instead of binding directly to the whole logo block
 
 ---
 
