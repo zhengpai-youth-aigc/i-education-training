@@ -266,6 +266,8 @@ Use `/trellis:finish-work` command to run through:
 4. [OK] Working directory clean (or WIP noted)
 5. [OK] Spec docs updated if needed
 
+For full task closeout in one pass, use `/trellis:close-task` to archive completed tasks, clean temporary worktrees, review spec updates, commit code, and record the session.
+
 ---
 
 ## File Descriptions
@@ -398,6 +400,7 @@ python3 ./.trellis/scripts/task.py create "<title>" # Create task
 
 # Slash commands
 /trellis:finish-work          # Pre-commit checklist
+/trellis:close-task           # Archive task, clean worktrees, commit, record session
 /trellis:break-loop           # Post-debug analysis
 /trellis:check-cross-layer    # Cross-layer verification
 ```
