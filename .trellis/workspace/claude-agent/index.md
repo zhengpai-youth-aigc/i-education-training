@@ -8,7 +8,7 @@
 
 <!-- @@@auto:current-status -->
 - **Active File**: `journal-1.md`
-- **Total Sessions**: 7
+- **Total Sessions**: 8
 - **Last Active**: 2026-04-02
 <!-- @@@/auto:current-status -->
 
@@ -19,7 +19,7 @@
 <!-- @@@auto:active-documents -->
 | File | Lines | Status |
 |------|-------|--------|
-| `journal-1.md` | ~250 | Active |
+| `journal-1.md` | ~285 | Active |
 <!-- @@@/auto:active-documents -->
 
 ---
@@ -29,6 +29,7 @@
 <!-- @@@auto:session-history -->
 | # | Date | Title | Commits |
 |---|------|-------|---------|
+| 8 | 2026-04-02 | Add lesson 07 and refine generate-page image handling | `c1f9ad4` |
 | 7 | 2026-04-02 | Fix learning channels page semantics | `d446c75` |
 | 6 | 2026-04-02 | Close out static site refactor | `cb3b2ea` |
 | 5 | 2026-04-02 | Finalize Eleventy deploy cleanup | `0972b37` |

@@ -248,3 +248,38 @@ Restored learning channels as a resource page and tightened generate-page rules.
 ### Next Steps
 
 - None - task complete
+
+
+## Session 8: Add lesson 07 and refine generate-page image handling
+
+**Date**: 2026-04-02
+**Task**: Add lesson 07 and refine generate-page image handling
+
+### Summary
+
+Added the new Skills recommendation lesson, updated page-generation rules for image-heavy inputs, and rebuilt the site output.
+
+### Main Changes
+
+- Updated `/trellis:generate-page` command docs to classify explanatory vs showcase images, add a multimodal-first fallback path, and forbid source-material wording from leaking into final reader-facing pages.
+- Added `site/lesson-07.html` plus synced course metadata, homepage updates, lesson navigation, and rebuilt Eleventy output in `docs/`.
+- Verified `npm run build` succeeds and confirmed the final lesson copy no longer includes draft/material/process phrasing.
+
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `c1f9ad4` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
