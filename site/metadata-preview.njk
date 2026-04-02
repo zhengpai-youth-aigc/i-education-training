@@ -1,0 +1,49 @@
+---
+layout: layouts/course-shell.njk
+title: Shared Metadata Preview
+description: Preview page for centralized Eleventy metadata and shared includes.
+permalink: metadata-preview.html
+currentPageUrl: lesson-01.html
+---
+<div class="back-link"><a href="index.html">← 返回首页</a></div>
+{% set label = "共享数据预览" %}
+{% include "partials/page-label.njk" %}
+<h1>集中站点元数据预览</h1>
+<p class="subtitle">这个页面用于验证 sidebar、搜索、课程目录、最新动态与进度统计都已接入统一 Eleventy 数据源。</p>
+
+<section class="card" style="padding: 24px; margin-bottom: 24px;">
+  <h2 style="margin-bottom: 12px;">共享索引摘要</h2>
+  <ul style="padding-left: 24px; color: #666666;">
+    <li>Sidebar entries: <strong>{{ contentIndex.entries.length }}</strong></li>
+    <li>Progress total: <strong>{{ progress.total }}</strong></li>
+    <li>Catalog entries: <strong>{{ homepage.catalogItems.length }}</strong></li>
+    <li>Latest updates: <strong>{{ homepage.latestUpdates.length }}</strong></li>
+  </ul>
+</section>
+
+<div class="hero-bottom-grid" style="margin-bottom: 32px;">
+  {% include "partials/home-latest-updates.njk" %}
+  <div id="site-progress" class="site-progress">
+    <div class="site-progress-head">
+      <span class="site-progress-label">📚 学习进度</span>
+      <span id="progress-text" class="site-progress-text"></span>
+    </div>
+    <div class="site-progress-track">
+      <div id="progress-bar" class="site-progress-bar"></div>
+    </div>
+    <p class="site-progress-note">进度总数现在来自 `site/_data/progress.js`。</p>
+  </div>
+</div>
+
+<h2 id="course-catalog">课程目录</h2>
+{% include "partials/home-course-catalog.njk" %}
+
+<div data-progress-scope="1" id="lesson-complete-btn" class="lesson-complete">
+  <button type="button" onclick="markComplete(1)" id="completeBtn" class="complete-btn">
+    ✅ 标记为已学习
+  </button>
+  <p id="complete-tip" class="complete-tip"></p>
+</div>
+
+<footer>正派青年AIGC · AI教育培训 · 让每个人都能体验AI的魅力</footer>
+<div class="spacer"></div>

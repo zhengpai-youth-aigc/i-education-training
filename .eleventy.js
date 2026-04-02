@@ -1,6 +1,9 @@
 module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy({ public: "." });
   eleventyConfig.addWatchTarget("public/");
+  eleventyConfig.addFilter("json", function (value) {
+    return JSON.stringify(value);
+  });
 
   return {
     dir: {

@@ -1,0 +1,79 @@
+<script>
+(function(){
+  var entries = {{ contentIndex.searchableEntries | json | safe }};
+
+  function openSearch() {
+    var overlay = document.getElementById('searchOverlay');
+    var input = document.getElementById('searchInput');
+    if(!overlay) return;
+    overlay.classList.add('active');
+    setTimeout(function(){ if(input) input.focus(); }, 50);
+  }
+
+  function closeSearch() {
+    var overlay = document.getElementById('searchOverlay');
+    var input = document.getElementById('searchInput');
+    var results = document.getElementById('searchResults');
+    if(overlay) overlay.classList.remove('active');
+    if(input) input.value = '';
+    if(results) results.innerHTML = '';
+  }
+
+  window.closeSearch = closeSearch;
+
+  function renderResults(query) {
+    var el = document.getElementById('searchResults');
+    if(!el) return;
+    if(!query) { el.innerHTML = ''; return; }
+
+    var html = '';
+    var lc = query.toLowerCase();
+    for(var i = 0; i < entries.length; i++) {
+      var entry = entries[i];
+      var title = entry.title || '';
+      var description = entry.description || '';
+      if(title.toLowerCase().indexOf(lc) !== -1 || description.toLowerCase().indexOf(lc) !== -1) {
+        var tagClass = typeof entry.badge === 'number' ? 'result-num' : 'result-num resource';
+        var tag = '<span class="' + tagClass + '">' + entry.displayBadge + '</span>';
+        html += '<a href="' + entry.url + '" class="search-result-item">' + tag + '<div><div class="result-title">' + title + '</div><div class="result-type">' + description + '</div></div></a>';
+      }
+    }
+
+    el.innerHTML = html || '<div class="search-no-result">没有找到相关课程</div>';
+  }
+
+  var overlay = document.getElementById('searchOverlay');
+  var input = document.getElementById('searchInput');
+  var results = document.getElementById('searchResults');
+
+  if(overlay) {
+    overlay.addEventListener('click', function(e){
+      if(e.target === overlay) closeSearch();
+    });
+  }
+
+  if(results) {
+    results.addEventListener('click', function(e){
+      if(e.target.closest('.search-result-item')) closeSearch();
+    });
+  }
+
+  document.querySelectorAll('.search-trigger').forEach(function(trigger){
+    trigger.addEventListener('click', openSearch);
+  });
+
+  document.addEventListener('keydown', function(e){
+    if((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
+    if(e.key === 'Escape') closeSearch();
+  });
+
+  if(input) {
+    input.addEventListener('input', function(){
+      renderResults(this.value);
+    });
+  }
+})();
+</script>

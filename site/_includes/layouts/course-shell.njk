@@ -1,0 +1,13 @@
+---
+layout: layouts/base.njk
+---
+<div class="layout">
+  {% include "partials/sidebar.njk" %}
+  <main class="main">
+    {{ content | safe }}
+  </main>
+</div>
+{% include "partials/search-overlay.njk" %}
+{% include "partials/scripts/sidebar-toggle.njk" %}
+{% include "partials/scripts/progress.njk" %}
+{% include "partials/scripts/search.njk" %}

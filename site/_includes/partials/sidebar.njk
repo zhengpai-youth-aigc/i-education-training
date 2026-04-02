@@ -1,0 +1,16 @@
+{% set currentPath = currentPageUrl or page.fileSlug ~ '.html' %}
+<aside class="sidebar">
+  <div class="sidebar-logo"><a href="{{ site.homeUrl }}" class="sidebar-logo-link" data-home-hint="{{ site.homeHint }}"><small>正派青年</small>AI教育培训 <span>· 课程</span></a><button class="sidebar-toggle" type="button">菜单</button></div>
+  {% for group in contentIndex.sidebarGroups %}
+  <div class="sidebar-section">
+    <div class="sidebar-title">{{ group.title }}</div>
+    {% for entry in group.items %}
+    <a href="{{ entry.url }}" class="sidebar-link{% if currentPath == entry.url %} active{% endif %}">{{ entry.navTitle }}</a>
+    {% endfor %}
+  </div>
+  {% endfor %}
+  <button class="search-trigger" type="button">
+    🔍 搜索课程
+    <span class="kbd">{{ site.searchShortcut }}</span>
+  </button>
+</aside>

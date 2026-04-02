@@ -1,0 +1,15 @@
+<div class="update-banner">
+  <div class="update-banner-title"><strong><span class="update-title-cn">最新动态</span><span class="update-title-en">Latest updates</span></strong></div>
+  <div class="update-table-head">
+    <div class="update-col-label">DATE 日期</div>
+    <div class="update-col-label">CATEGORY 类别</div>
+    <div class="update-col-label">TITLE 标题</div>
+  </div>
+  {% for item in homepage.latestUpdates %}
+  <a href="{{ item.url }}" class="update-item">
+    <span class="update-date">{{ item.date }}</span>
+    <span class="update-tag">{{ item.category }}</span>
+    <span class="update-text">{{ item.text }}</span>
+  </a>
+  {% endfor %}
+</div>

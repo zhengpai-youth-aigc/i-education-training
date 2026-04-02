@@ -1,0 +1,5 @@
+<script>
+const sidebar = document.querySelector('.sidebar');
+const sidebarToggle = sidebar ? sidebar.querySelector('.sidebar-toggle') : null;
+if(sidebarToggle) sidebarToggle.onclick = () => sidebar.classList.toggle('expanded');
+</script>

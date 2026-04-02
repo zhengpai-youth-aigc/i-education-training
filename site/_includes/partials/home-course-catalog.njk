@@ -1,0 +1,12 @@
+{% for entry in homepage.catalogItems %}
+<a href="{{ entry.url }}" class="course-item{% if entry.catalogVariant == 'non-lesson' %} non-lesson{% endif %}">
+  <div class="course-left">
+    <span class="course-num{% if entry.catalogVariant == 'non-lesson' %} non-lesson-num{% endif %}">{{ entry.displayBadge }}</span>
+    <div>
+      <div class="course-title">{{ entry.title }}</div>
+      <div class="course-desc">{{ entry.description }}</div>
+    </div>
+  </div>
+  <span class="{% if entry.catalogVariant == 'non-lesson' %}course-arrow-link{% else %}course-arrow{% endif %}">{% if entry.catalogVariant == 'non-lesson' %}↗{% else %}→{% endif %}</span>
+</a>
+{% endfor %}

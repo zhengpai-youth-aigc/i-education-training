@@ -1,0 +1,49 @@
+<script>
+(function(){
+  var progressConfig = {{ progress | json | safe }};
+  var key = progressConfig.storageKey;
+  var total = progressConfig.total;
+  var done = JSON.parse(localStorage.getItem(key) || '[]');
+
+  var progressScope = document.querySelector('[data-progress-scope]');
+  if(progressScope) {
+    var lessonNumber = Number(progressScope.getAttribute('data-progress-scope'));
+    var btn = document.getElementById('completeBtn');
+    var tip = document.getElementById('complete-tip');
+    if(done.includes(lessonNumber)) {
+      if(btn) { btn.textContent = '✓ 已学习'; btn.style.opacity = '0.7'; btn.style.cursor = 'default'; }
+      if(tip) tip.textContent = '你已完成这一课！';
+    }
+    window.markComplete = function(n) {
+      var entries = JSON.parse(localStorage.getItem(key) || '[]');
+      if(!entries.includes(n)) {
+        entries.push(n);
+        localStorage.setItem(key, JSON.stringify(entries));
+      }
+      if(btn) { btn.textContent = '✓ 已学习'; btn.style.opacity = '0.7'; btn.style.cursor = 'default'; }
+      if(tip) tip.textContent = '✓ 已记录！去首页看看你的进度吧 🎉';
+    };
+  }
+
+  var siteProgress = document.getElementById('site-progress');
+  var progressBar = document.getElementById('progress-bar');
+  var progressText = document.getElementById('progress-text');
+  if(siteProgress && progressBar && progressText) {
+    if(done.length > 0) siteProgress.style.display = 'block';
+    var pct = total ? Math.round(done.length / total * 100) : 0;
+    progressBar.style.width = pct + '%';
+    progressText.textContent = done.length + '/' + total + ' 已完成';
+  }
+
+  document.querySelectorAll('.course-item').forEach(function(item) {
+    var href = item.getAttribute('href') || '';
+    var matchedEntry = progressConfig.entries.find(function(entry) {
+      return entry.url === href && typeof entry.badge === 'number';
+    });
+    if(matchedEntry && done.includes(matchedEntry.badge)) {
+      var arrow = item.querySelector('.course-arrow');
+      if(arrow) arrow.textContent = '✅';
+    }
+  });
+})();
+</script>
