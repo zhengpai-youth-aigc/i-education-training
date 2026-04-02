@@ -283,3 +283,37 @@ Added the new Skills recommendation lesson, updated page-generation rules for im
 ### Next Steps
 
 - None - task complete
+
+
+## Session 9: 更新第七课 Skills 推荐清单
+
+**Date**: 2026-04-03
+**Task**: 更新第七课 Skills 推荐清单
+
+### Summary
+
+重写 lesson-07 内容并补充 OfficeCLI 重点讲解
+
+### Main Changes
+
+- 重写第七课《Skills推荐清单》，将内容整理为 6 个优先安装的 Skills，并前置高价值信息卡片。
+- 新增 OfficeCLI 重点讲解区，补充其安装方式、适用场景和与官方办公类 Skills 的搭配逻辑，并修正该区块字体层级。
+- 同步更新首页 Latest updates、课程目录文案，并重新运行 Eleventy 构建生成 docs 输出。
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `c783a84` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete

@@ -8,8 +8,8 @@
 
 <!-- @@@auto:current-status -->
 - **Active File**: `journal-1.md`
-- **Total Sessions**: 8
-- **Last Active**: 2026-04-02
+- **Total Sessions**: 9
+- **Last Active**: 2026-04-03
 <!-- @@@/auto:current-status -->
 
 ---
@@ -19,7 +19,7 @@
 <!-- @@@auto:active-documents -->
 | File | Lines | Status |
 |------|-------|--------|
-| `journal-1.md` | ~285 | Active |
+| `journal-1.md` | ~319 | Active |
 <!-- @@@/auto:active-documents -->
 
 ---
@@ -29,6 +29,7 @@
 <!-- @@@auto:session-history -->
 | # | Date | Title | Commits |
 |---|------|-------|---------|
+| 9 | 2026-04-03 | 更新第七课 Skills 推荐清单 | `c783a84` |
 | 8 | 2026-04-02 | Add lesson 07 and refine generate-page image handling | `c1f9ad4` |
 | 7 | 2026-04-02 | Fix learning channels page semantics | `d446c75` |
 | 6 | 2026-04-02 | Close out static site refactor | `cb3b2ea` |
