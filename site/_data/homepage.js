@@ -14,6 +14,12 @@ const catalogIds = [
 module.exports = {
   latestUpdates: [
     {
+      date: "4月3日",
+      category: "更新",
+      text: "第七课 · Skills推荐清单：补充 6 个值得优先安装的 Skills，并重点拆解 OfficeCLI 的实际价值",
+      url: "lesson-07.html"
+    },
+    {
       date: "4月2日",
       category: "新增",
       text: "第七课 · Skills推荐与使用：整理官方与第三方 Skills 的优先安装顺序和搭配思路",
