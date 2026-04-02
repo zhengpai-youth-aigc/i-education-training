@@ -1,0 +1,9 @@
+{"file": ".trellis/workflow.md", "reason": "Project workflow and conventions"}
+{"file": ".trellis/spec/backend/index.md", "reason": "Backend development guide"}
+{"file": ".trellis/spec/frontend/index.md", "reason": "Frontend development guide"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/index.md", "reason": "Frontend deploy/source-of-truth rules"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/directory-structure.md", "reason": "Frontend directory and docs output structure"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/quality-guidelines.md", "reason": "Frontend build and generated-output checks"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/backend/index.md", "reason": "Backend docs must match real static server behavior"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/backend/directory-structure.md", "reason": "Server directory responsibilities and preview target"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/backend/quality-guidelines.md", "reason": "Keep static server safe during preview workflow changes"}

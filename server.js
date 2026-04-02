@@ -4,7 +4,7 @@ const path = require('path');
 
 const host = '0.0.0.0';
 const port = Number(process.env.PORT || 3000);
-const publicDir = path.join(__dirname, 'public');
+const siteRoot = path.resolve(__dirname, process.env.STATIC_ROOT || 'docs');
 
 const mimeTypes = {
   '.html': 'text/html; charset=utf-8',
@@ -36,10 +36,10 @@ function sendFile(filePath, res) {
 
 const server = http.createServer((req, res) => {
   const requestPath = req.url === '/' ? '/index.html' : req.url;
-  const safePath = path.normalize(requestPath).replace(/^(\.\.[/\\])+/, '');
-  const filePath = path.join(publicDir, safePath);
+  const safePath = path.normalize(requestPath).replace(/^(\0|\.{2}[\/\\])+/, '');
+  const filePath = path.join(siteRoot, safePath);
 
-  if (!filePath.startsWith(publicDir)) {
+  if (!filePath.startsWith(siteRoot)) {
     res.statusCode = 403;
     res.setHeader('Content-Type', 'text/plain; charset=utf-8');
     res.end('403 Forbidden');
@@ -50,5 +50,6 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(port, host, () => {
-  console.log(`AI教育培训项目已启动: http://${host}:${port}/`);
+  console.log(`AI教育培训项目预览已启动 (${path.basename(siteRoot)}): http://${host}:${port}/`);
 });
+

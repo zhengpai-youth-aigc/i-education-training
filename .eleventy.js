@@ -9,6 +9,8 @@ module.exports = function (eleventyConfig) {
     eleventyConfig.addPassthroughCopy({ [`public/${file}`]: file });
   });
 
+  eleventyConfig.addPassthroughCopy({ "public/screenshots/codex-favicon.ico": "favicon.ico" });
+
   eleventyConfig.addWatchTarget("public/");
   eleventyConfig.addFilter("json", function (value) {
     return JSON.stringify(value);
@@ -26,3 +28,4 @@ module.exports = function (eleventyConfig) {
     markdownTemplateEngine: "njk"
   };
 };
+

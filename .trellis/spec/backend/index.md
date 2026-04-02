@@ -6,7 +6,7 @@
 
 ## Overview
 
-The backend in this repository is intentionally minimal: a single CommonJS Node.js server (`server.js`) that serves static files from `public/`.
+The backend in this repository is intentionally minimal: a single CommonJS Node.js server (`server.js`) used for local static preview of the generated site output.
 
 There are no API routes, controllers/services, databases, or background jobs. The guides in this folder document the **current reality** so future changes do not drift into an imagined framework architecture.
 

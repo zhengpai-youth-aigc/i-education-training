@@ -12,21 +12,21 @@ Before submitting or committing, use this checklist to ensure work completeness.
 
 ```bash
 # Only run scripts that exist in this repo.
-# (This project is a minimal static site + Node static server.)
+# (This project is an Eleventy-built static site plus a minimal Node preview server.)
 
-pnpm start
+npm start
 
 # If these scripts are added later, they must pass:
-pnpm lint
-pnpm type-check
-pnpm test
+npm run lint
+npm run type-check
+npm test
 ```
 
-- [ ] `pnpm start` works and serves `public/`?
-- [ ] `pnpm lint` passes with 0 errors (if present)?
-- [ ] `pnpm type-check` passes with no type errors (if present)?
-- [ ] `pnpm test` passes (if present)?
-- [ ] No leftover debug logging added to `public/*.html` scripts?
+- [ ] `npm start` works and serves the generated `docs/` output locally?
+- [ ] `npm run lint` passes with 0 errors (if present)?
+- [ ] `npm run type-check` passes with no type errors (if present)?
+- [ ] `npm test` passes (if present)?
+- [ ] No leftover debug logging added to page scripts?
 - [ ] No unsafe path handling changes in `server.js`?
 
 ### 1.5. Test Coverage
@@ -48,7 +48,7 @@ Check if your change needs new or updated tests (see `.trellis/spec/unit-test/co
 - [ ] Does `.trellis/spec/guides/` need updates?
   - New cross-layer flows, lessons from bugs
 
-**Key Question**: 
+**Key Question**:
 > "If I fixed a bug or discovered something non-obvious, should I document it so future me (or others) won't hit the same issue?"
 
 If YES -> Update the relevant code-spec doc.
@@ -107,14 +107,14 @@ If the change spans multiple layers:
 
 ```bash
 # 1. Run locally
-pnpm start
+npm start
 
 # 2. View changes
 git status
 git diff --name-only
 
 # 3. If tooling scripts exist, run them
-pnpm lint && pnpm type-check && pnpm test
+npm run lint && npm run type-check && npm test
 ```
 
 ---
@@ -139,7 +139,7 @@ Development Flow:
   Write code -> Test -> /trellis:finish-work -> git commit -> /trellis:record-session
                           |                              |
                    Ensure completeness              Record progress
-                   
+
 Debug Flow:
   Hit bug -> Fix -> /trellis:break-loop -> Knowledge capture
                        |

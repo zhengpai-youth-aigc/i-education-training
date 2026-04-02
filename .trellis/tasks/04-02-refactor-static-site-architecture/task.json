@@ -36,9 +36,7 @@
   "commit": null,
   "pr_url": null,
   "subtasks": [],
-  "children": [
-    "04-02-finalize-deploy-cleanup"
-  ],
+  "children": [],
   "parent": null,
   "relatedFiles": [],
   "notes": "",
