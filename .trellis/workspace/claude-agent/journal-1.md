@@ -37,3 +37,35 @@ Added the initial Eleventy build pipeline, docs output configuration, migration 
 ### Next Steps
 
 - None - task complete
+
+
+## Session 2: Centralize shared Eleventy metadata
+
+**Date**: 2026-04-02
+**Task**: Centralize shared Eleventy metadata
+
+### Summary
+
+Added centralized Eleventy data sources and shared includes for sidebar, search, progress, homepage catalog, and latest updates, plus a metadata preview page for validation.
+
+### Main Changes
+
+
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `9184e9c` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
