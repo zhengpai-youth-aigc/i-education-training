@@ -1,0 +1,44 @@
+{
+  "id": "centralize-site-metadata",
+  "name": "centralize-site-metadata",
+  "title": "Centralize site metadata and shared includes",
+  "description": "Create Eleventy data files and shared includes/layouts for sidebar, search overlay, progress counts, homepage course listings, and latest updates so repeated site structure comes from one source of truth.",
+  "status": "planning",
+  "dev_type": null,
+  "scope": null,
+  "priority": "P2",
+  "creator": "claude-agent",
+  "assignee": "claude-agent",
+  "createdAt": "2026-04-02",
+  "completedAt": null,
+  "branch": null,
+  "base_branch": "feat/refactor-frontend",
+  "worktree_path": null,
+  "current_phase": 0,
+  "next_action": [
+    {
+      "phase": 1,
+      "action": "implement"
+    },
+    {
+      "phase": 2,
+      "action": "check"
+    },
+    {
+      "phase": 3,
+      "action": "finish"
+    },
+    {
+      "phase": 4,
+      "action": "create-pr"
+    }
+  ],
+  "commit": null,
+  "pr_url": null,
+  "subtasks": [],
+  "children": [],
+  "parent": "04-02-refactor-static-site-architecture",
+  "relatedFiles": [],
+  "notes": "",
+  "meta": {}
+}
