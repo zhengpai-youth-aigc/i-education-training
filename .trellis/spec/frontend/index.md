@@ -6,12 +6,15 @@
 
 ## Overview
 
-The frontend in this repository is a static site (plain HTML, CSS, and small inline JavaScript).
+The frontend in this repository is a static site built from plain HTML, CSS, and small inline JavaScript.
 
-- Source of truth: `public/`
-- GitHub Pages deployment mirror: `docs/`
+During the Eleventy migration:
 
-The guides in this folder describe the conventions that **already exist** in this repo (no React/Vue, no TypeScript build, no component framework).
+- `public/` remains the legacy hand-authored page source and shared asset source
+- `site/` is the source of truth for Eleventy-migrated pages, layouts, includes, and shared data
+- `docs/` is the generated deployment output for GitHub Pages
+
+The guides in this folder describe the conventions that already exist in this repo (no React/Vue, no TypeScript build, no component framework).
 
 ---
 
@@ -30,9 +33,9 @@ The guides in this folder describe the conventions that **already exist** in thi
 
 ## How to Use These Guidelines
 
-- When editing pages, start from the existing patterns in `public/`.
-- If you add a new page meant to be deployed, keep `docs/` aligned with the finalized `public/` output.
-- If you introduce a new recurring pattern (CSS class, inline script behavior), update the relevant guide so future changes stay consistent.
+- When editing pages, start from the true source for that page (`public/` for legacy pages, `site/` for Eleventy-migrated pages).
+- If you add or migrate a page meant to be deployed, verify the generated `docs/` output rather than treating `docs/` as a hand-edited source directory.
+- If you introduce a new recurring pattern (CSS class, inline script behavior, shared include, or data shape), update the relevant guide so future changes stay consistent.
 
 ---
 

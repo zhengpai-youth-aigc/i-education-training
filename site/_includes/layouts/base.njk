@@ -1,15 +1,21 @@
 <!doctype html>
-<html lang="en">
+<html lang="zh-CN">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{% if title %}{{ title }} · {% endif %}AI Education Training</title>
+    <title>{{ title }}</title>
     {% if description %}
     <meta name="description" content="{{ description }}" />
     {% endif %}
     <link rel="stylesheet" href="styles.css" />
+    {% if inlineStyles %}
+{{ inlineStyles | safe }}
+    {% endif %}
   </head>
   <body>
     {{ content | safe }}
+    {% if afterBodyContent %}
+{{ afterBodyContent | safe }}
+    {% endif %}
   </body>
 </html>

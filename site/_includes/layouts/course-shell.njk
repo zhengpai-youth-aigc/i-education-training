@@ -6,6 +6,18 @@ layout: layouts/base.njk
   <main class="main">
     {{ content | safe }}
   </main>
+  {% if tocItems and tocItems.length %}
+  <aside class="toc">
+    <div class="toc-title">目录</div>
+    {% for item in tocItems %}
+    <a href="{{ item.href }}" class="toc-link">{{ item.label }}</a>
+    {% endfor %}
+    <button class="search-trigger" type="button">
+      🔍 搜索课程
+      <span class="kbd">{{ site.searchShortcut }}</span>
+    </button>
+  </aside>
+  {% endif %}
 </div>
 {% include "partials/search-overlay.njk" %}
 {% include "partials/scripts/sidebar-toggle.njk" %}

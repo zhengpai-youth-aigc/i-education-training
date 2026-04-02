@@ -1,0 +1,8 @@
+{"file": ".trellis/workflow.md", "reason": "Project workflow and conventions"}
+{"file": ".trellis/spec/frontend/index.md", "reason": "Frontend development guide"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/component-guidelines.md", "reason": "Shared course/home markup patterns and reusable block structure"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/hook-guidelines.md", "reason": "Inline script patterns for search, sidebar, and progress behavior"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/state-management.md", "reason": "localStorage and DOM state behavior for progress and sidebar"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/quality-guidelines.md", "reason": "Source-of-truth and migration quality checks for Eleventy pages"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/type-safety.md", "reason": "Plain JavaScript data-shape guidance for inline data and localStorage"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/guides/code-reuse-thinking-guide.md", "reason": "Avoid reintroducing duplicated metadata and page scripts during migration"}

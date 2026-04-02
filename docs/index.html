@@ -1,11 +1,16 @@
 <!doctype html>
 <html lang="zh-CN">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>AI教育培训 · 从零开始，学会真正用AI</title>
-  <style>
-    /* ── Hero 动画 ── */
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AI教育培训 · 从零开始，学会真正用AI</title>
+    
+    <meta name="description" content="不需要会编程，不需要懂技术。跟着做，亲手体验 AI 的魅力，30分钟完成你的第一个实战项目。" />
+    
+    <link rel="stylesheet" href="styles.css" />
+    
+<style>
+/* ── Hero 动画 ── */
     @keyframes fadeInUp {
       from { opacity: 0; transform: translateY(24px); }
       to   { opacity: 1; transform: translateY(0); }
@@ -126,10 +131,9 @@
 
     /* 浮动emoji */
     .floating { display: inline-block; animation: float 3s ease-in-out infinite; }
-  </style>
-  <link rel="stylesheet" href="styles.css" />
-  <style>
-    body { line-height: 1.6; font-size: 18px; }
+</style>
+<style>
+body { line-height: 1.6; font-size: 18px; }
     .main { flex: 1; width: min(1160px, 100%); padding: 60px 72px 72px; margin: 0 auto; }
     .hero-shell { display: grid; grid-template-columns: minmax(0, 1.08fr) minmax(300px, 380px); gap: 30px; align-items: center; margin-bottom: 26px; }
     .hero-copy { max-width: 640px; }
@@ -330,32 +334,50 @@
       .grid-card h4 { font-size: 24px; }
       .grid-card p { font-size: 15px; max-width: none; }
     }
-  </style>
-</head>
-<body>
-<div class="layout">
-  <aside class="sidebar">
-    <div class="sidebar-logo"><a href="index.html" class="sidebar-logo-link" data-home-hint="点击进入首页"><small>正派青年</small>AI教育培训 <span>· 课程</span></a><button class="sidebar-toggle" type="button">菜单</button></div>
-    <div class="sidebar-section">
-      <div class="sidebar-title">课程</div>
-      <a href="lesson-01.html" class="sidebar-link">第一课 · Codex入门</a>
-      <a href="lesson-02.html" class="sidebar-link">第二课 · 上手 Codex</a>
-      <a href="lesson-03.html" class="sidebar-link">第三课 · AI提问</a>
-      <a href="lesson-04.html" class="sidebar-link">第四课 · Agent</a>
-      <a href="lesson-05.html" class="sidebar-link">第五课 · Skills</a>
-      <a href="lesson-06.html" class="sidebar-link">第六课 · 模型对比</a>
-    </div>
-    <div class="sidebar-section">
-      <div class="sidebar-title">资源</div>
-      <a href="lesson-07.html" class="sidebar-link">学习渠道</a>
-      <a href="rtk-install-guide.html" class="sidebar-link">RTK 安装与配置教程</a>
-    </div>
-    <button class="search-trigger" type="button">
-      🔍 搜索课程
-      <span class="kbd">⌘K</span>
-    </button>
-  </aside>
+</style>
+
+    
+  </head>
+  <body>
+    <div class="layout">
+  
+<aside class="sidebar">
+  <div class="sidebar-logo"><a href="index.html" class="sidebar-logo-link" data-home-hint="点击进入首页"><small>正派青年</small>AI教育培训 <span>· 课程</span></a><button class="sidebar-toggle" type="button">菜单</button></div>
+  
+  <div class="sidebar-section">
+    <div class="sidebar-title">课程</div>
+    
+    <a href="lesson-01.html" class="sidebar-link">第一课 · Codex入门</a>
+    
+    <a href="lesson-02.html" class="sidebar-link">第二课 · 上手 Codex</a>
+    
+    <a href="lesson-03.html" class="sidebar-link">第三课 · AI提问</a>
+    
+    <a href="lesson-04.html" class="sidebar-link">第四课 · Agent</a>
+    
+    <a href="lesson-05.html" class="sidebar-link">第五课 · Skills</a>
+    
+    <a href="lesson-06.html" class="sidebar-link">第六课 · 模型对比</a>
+    
+  </div>
+  
+  <div class="sidebar-section">
+    <div class="sidebar-title">资源</div>
+    
+    <a href="lesson-07.html" class="sidebar-link">学习渠道</a>
+    
+    <a href="rtk-install-guide.html" class="sidebar-link">RTK 安装与配置教程</a>
+    
+  </div>
+  
+  <button class="search-trigger" type="button">
+    🔍 搜索课程
+    <span class="kbd">⌘K</span>
+  </button>
+</aside>
+
   <main class="main">
+    
     <section class="hero-shell">
       <div class="hero-copy">
         <div class="page-label">首页</div>
@@ -414,38 +436,45 @@
 
     <div class="hero-bottom-grid">
       <div class="update-banner">
-      <div class="update-banner-title"><strong><span class="update-title-cn">最新动态</span><span class="update-title-en">Latest updates</span></strong></div>
-      <div class="update-table-head">
-        <div class="update-col-label">DATE 日期</div>
-        <div class="update-col-label">CATEGORY 类别</div>
-        <div class="update-col-label">TITLE 标题</div>
-      </div>
-      <a href="rtk-install-guide.html" class="update-item">
-        <span class="update-date">4月1日</span>
-        <span class="update-tag">更新</span>
-        <span class="update-text">RTK 安装与配置教程：补齐安装、初始化与配置说明，适合作为最新工具页入口</span>
-      </a>
-      <a href="lesson-06.html" class="update-item">
-        <span class="update-date">4月1日</span>
-        <span class="update-tag">新增</span>
-        <span class="update-text">第六课 · 模型对比：国产vs国外大模型，2026年3月最新数据</span>
-      </a>
-      <a href="lesson-02.html" class="update-item">
-        <span class="update-date">4月1日</span>
-        <span class="update-tag">更新</span>
-        <span class="update-text">第二课新增：定时任务、Skills管理、全局规则、推理深度档位</span>
-      </a>
-      <a href="#brand-panel" class="update-item">
-        <span class="update-date">3月30日</span>
-        <span class="update-tag">更新</span>
-        <span class="update-text">首页视觉升级：新增正派青年AIGC品牌标识，统一站点风格</span>
-      </a>
-      <a href="lesson-04.html" class="update-item">
-        <span class="update-date">3月30日</span>
-        <span class="update-tag">新增</span>
-        <span class="update-text">第四课 · Agent：用大白话解释Agent是什么、为什么非做不可</span>
-      </a>
-      </div>
+  <div class="update-banner-title"><strong><span class="update-title-cn">最新动态</span><span class="update-title-en">Latest updates</span></strong></div>
+  <div class="update-table-head">
+    <div class="update-col-label">DATE 日期</div>
+    <div class="update-col-label">CATEGORY 类别</div>
+    <div class="update-col-label">TITLE 标题</div>
+  </div>
+  
+  <a href="rtk-install-guide.html" class="update-item">
+    <span class="update-date">4月1日</span>
+    <span class="update-tag">更新</span>
+    <span class="update-text">RTK 安装与配置教程：补齐安装、初始化与配置说明，适合作为最新工具页入口</span>
+  </a>
+  
+  <a href="lesson-06.html" class="update-item">
+    <span class="update-date">4月1日</span>
+    <span class="update-tag">新增</span>
+    <span class="update-text">第六课 · 模型对比：国产vs国外大模型，2026年3月最新数据</span>
+  </a>
+  
+  <a href="lesson-02.html" class="update-item">
+    <span class="update-date">4月1日</span>
+    <span class="update-tag">更新</span>
+    <span class="update-text">第二课新增：定时任务、Skills管理、全局规则、推理深度档位</span>
+  </a>
+  
+  <a href="#brand-panel" class="update-item">
+    <span class="update-date">3月30日</span>
+    <span class="update-tag">更新</span>
+    <span class="update-text">首页视觉升级：新增正派青年AIGC品牌标识，统一站点风格</span>
+  </a>
+  
+  <a href="lesson-04.html" class="update-item">
+    <span class="update-date">3月30日</span>
+    <span class="update-tag">新增</span>
+    <span class="update-text">第四课 · Agent：用大白话解释Agent是什么、为什么非做不可</span>
+  </a>
+  
+</div>
+
 
       <div id="site-progress" class="site-progress">
         <div class="site-progress-head">
@@ -460,76 +489,85 @@
     </div>
 
     <h2 id="course-catalog">课程目录</h2>
-    <a href="lesson-01.html" class="course-item">
-      <div class="course-left">
-        <span class="course-num">01</span>
-        <div>
-          <div class="course-title">Codex 入门：装好、打开、体验一下</div>
-          <div class="course-desc">Mac/Windows · 跟着做30分钟 · 做出第一个网页</div>
-        </div>
-      </div>
-      <span class="course-arrow">→</span>
-    </a>
-    <a href="lesson-02.html" class="course-item">
-      <div class="course-left">
-        <span class="course-num">02</span>
-        <div>
-          <div class="course-title">上手 Codex：文件夹管理</div>
-          <div class="course-desc">跟着做30分钟 · 学会组织项目 · 做出第一个真实项目</div>
-        </div>
-      </div>
-      <span class="course-arrow">→</span>
-    </a>
-    <a href="lesson-03.html" class="course-item">
-      <div class="course-left">
-        <span class="course-num">03</span>
-        <div>
-          <div class="course-title">AI提问入门：问得好才能答得好</div>
-          <div class="course-desc">4步提问法 · 3个实战场景 · 万能模板</div>
-        </div>
-      </div>
-      <span class="course-arrow">→</span>
-    </a>
-    <a href="lesson-04.html" class="course-item">
-      <div class="course-left">
-        <span class="course-num">04</span>
-        <div>
-          <div class="course-title">Agent是什么？为什么一定要做？</div>
-          <div class="course-desc">通俗解释 · 面向零基础 · 无技术术语</div>
-        </div>
-      </div>
-      <span class="course-arrow">→</span>
-    </a>
-    <a href="lesson-05.html" class="course-item">
-      <div class="course-left">
-        <span class="course-num">05</span>
-        <div>
-          <div class="course-title">Skills是什么？怎么用？</div>
-          <div class="course-desc">Skills入门 · 实战案例 · 安装与使用</div>
-        </div>
-      </div>
-      <span class="course-arrow">→</span>
-    </a>
-    <a href="lesson-06.html" class="course-item">
-      <div class="course-left">
-        <span class="course-num">06</span>
-        <div>
-          <div class="course-title">国产 vs 国外大模型对比</div>
-          <div class="course-desc">各模型优势 · 推荐场景 · 选型指南</div>
-        </div>
-      </div>
-      <span class="course-arrow">→</span>
-    </a>
-    <a href="rtk-install-guide.html" class="course-item non-lesson">
-      <div class="course-left">
-        <span class="course-num non-lesson-num">工具</span>
-        <div>
-          <div class="course-title">RTK 安装与配置教程</div>
-          <div class="course-desc">重点讲 Windows · 二进制安装 · Claude Code 初始化</div>
-        </div>
-      </div>
-      <span class="course-arrow-link">↗</span>
-    </a>
+    
+<a href="lesson-01.html" class="course-item">
+  <div class="course-left">
+    <span class="course-num">01</span>
+    <div>
+      <div class="course-title">Codex 入门：装好、打开、体验一下</div>
+      <div class="course-desc">Mac/Windows · 跟着做30分钟 · 做出第一个网页</div>
+    </div>
+  </div>
+  <span class="course-arrow">→</span>
+</a>
+
+<a href="lesson-02.html" class="course-item">
+  <div class="course-left">
+    <span class="course-num">02</span>
+    <div>
+      <div class="course-title">上手 Codex：文件夹管理</div>
+      <div class="course-desc">文件夹 + 线程 · 组织项目 · 实战入门</div>
+    </div>
+  </div>
+  <span class="course-arrow">→</span>
+</a>
+
+<a href="lesson-03.html" class="course-item">
+  <div class="course-left">
+    <span class="course-num">03</span>
+    <div>
+      <div class="course-title">AI提问入门：问得好才能答得好</div>
+      <div class="course-desc">4步提问法 · 3个实战场景 · 万能模板</div>
+    </div>
+  </div>
+  <span class="course-arrow">→</span>
+</a>
+
+<a href="lesson-04.html" class="course-item">
+  <div class="course-left">
+    <span class="course-num">04</span>
+    <div>
+      <div class="course-title">Agent是什么？为什么一定要做？</div>
+      <div class="course-desc">通俗解释 · 面向零基础 · 无技术术语</div>
+    </div>
+  </div>
+  <span class="course-arrow">→</span>
+</a>
+
+<a href="lesson-05.html" class="course-item">
+  <div class="course-left">
+    <span class="course-num">05</span>
+    <div>
+      <div class="course-title">Skills是什么？怎么用？</div>
+      <div class="course-desc">Skills入门 · 实战案例 · 安装与使用</div>
+    </div>
+  </div>
+  <span class="course-arrow">→</span>
+</a>
+
+<a href="lesson-06.html" class="course-item">
+  <div class="course-left">
+    <span class="course-num">06</span>
+    <div>
+      <div class="course-title">国产 vs 国外大模型对比</div>
+      <div class="course-desc">2026年3月最新 · 各模型优势 · 推荐场景 · 选型指南</div>
+    </div>
+  </div>
+  <span class="course-arrow">→</span>
+</a>
+
+<a href="rtk-install-guide.html" class="course-item non-lesson">
+  <div class="course-left">
+    <span class="course-num non-lesson-num">工具</span>
+    <div>
+      <div class="course-title">RTK 安装与配置教程</div>
+      <div class="course-desc">重点讲 Windows · 二进制安装 · Claude Code 初始化</div>
+    </div>
+  </div>
+  <span class="course-arrow-link">↗</span>
+</a>
+
+
     <h2>你将学到</h2>
     <div class="grid-2">
       <div class="grid-card">
@@ -576,46 +614,10 @@
 
     <footer>正派青年AIGC · AI教育培训 · 让每个人都能体验AI的魅力</footer>
     <div class="spacer"></div>
+
   </main>
+  
 </div>
-<script>
-const sidebar = document.querySelector(".sidebar");
-const sidebarToggle = sidebar ? sidebar.querySelector(".sidebar-toggle") : null;
-if(sidebarToggle) sidebarToggle.onclick = () => sidebar.classList.toggle("expanded");
-
-// 全站进度追踪
-(function(){
-  const TOTAL = 7;
-  const key = 'ai-course-progress';
-  const done = JSON.parse(localStorage.getItem(key) || '[]');
-
-  // 渲染进度条
-  const sp = document.getElementById('site-progress');
-  const pb = document.getElementById('progress-bar');
-  const pt = document.getElementById('progress-text');
-  if(sp && pb && pt) {
-    if(done.length > 0) { sp.style.display = 'block'; }
-    const pct = Math.round(done.length / TOTAL * 100);
-    pb.style.width = pct + '%';
-    pt.textContent = done.length + '/' + TOTAL + ' 已完成';
-  }
-
-  // 已完成的课程序号加 ✅
-  document.querySelectorAll('.course-item').forEach(item => {
-    const href = item.getAttribute('href');
-    const match = href.match(/lesson-0(\d)/);
-    if(match) {
-      const num = parseInt(match[1]);
-      if(done.includes(num)) {
-        const arrow = item.querySelector('.course-arrow');
-        if(arrow) arrow.textContent = '✅';
-      }
-    }
-  });
-})();
-</script>
-
-<!-- 搜索弹窗 -->
 <div class="search-overlay" id="searchOverlay">
   <div class="search-box">
     <div class="search-input-wrap">
@@ -628,38 +630,102 @@ if(sidebarToggle) sidebarToggle.onclick = () => sidebar.classList.toggle("expand
 </div>
 
 <script>
+const sidebar = document.querySelector('.sidebar');
+const sidebarToggle = sidebar ? sidebar.querySelector('.sidebar-toggle') : null;
+if(sidebarToggle) sidebarToggle.onclick = () => sidebar.classList.toggle('expanded');
+</script>
+
+<script>
 (function(){
-  var lessons = [
-    {n:1, t:"Codex入门：装好、打开、体验一下", d:"Mac/Windows · 跟着做30分钟 · 做出第一个网页", u:"lesson-01.html"},
-    {n:2, t:"上手 Codex：文件夹管理", d:"文件夹 + 线程 · 组织项目 · 实战入门", u:"lesson-02.html"},
-    {n:3, t:"AI提问入门：问得好才能答得好", d:"4步提问法 · 3个实战场景 · 万能模板", u:"lesson-03.html"},
-    {n:4, t:"Agent是什么？为什么一定要做？", d:"通俗解释 · 面向零基础 · 无技术术语", u:"lesson-04.html"},
-    {n:5, t:"Skills是什么？怎么用？", d:"Skills入门 · 实战案例 · 安装与使用", u:"lesson-05.html"},
-    {n:6, t:"国产 vs 国外大模型对比", d:"2026年3月最新 · 各模型优势 · 推荐场景 · 选型指南", u:"lesson-06.html"},
-    {n:"资源", t:"学习渠道", d:"公众号 · B站UP主 · 学习平台推荐", u:"lesson-07.html"},
-    {n:"工具", t:"RTK 安装与配置教程", d:"重点讲 Windows · 二进制安装 · Claude Code 初始化", u:"rtk-install-guide.html"},
-  ];
+  var progressConfig = {"storageKey":"ai-course-progress","total":7,"entries":[{"id":"lesson-01","url":"lesson-01.html","badge":1,"displayBadge":"01","title":"Codex 入门：装好、打开、体验一下"},{"id":"lesson-02","url":"lesson-02.html","badge":2,"displayBadge":"02","title":"上手 Codex：文件夹管理"},{"id":"lesson-03","url":"lesson-03.html","badge":3,"displayBadge":"03","title":"AI提问入门：问得好才能答得好"},{"id":"lesson-04","url":"lesson-04.html","badge":4,"displayBadge":"04","title":"Agent是什么？为什么一定要做？"},{"id":"lesson-05","url":"lesson-05.html","badge":5,"displayBadge":"05","title":"Skills是什么？怎么用？"},{"id":"lesson-06","url":"lesson-06.html","badge":6,"displayBadge":"06","title":"国产 vs 国外大模型对比"},{"id":"lesson-07","url":"lesson-07.html","badge":7,"displayBadge":"资源","title":"学习渠道"}]};
+  var key = progressConfig.storageKey;
+  var total = progressConfig.total;
+  var done = JSON.parse(localStorage.getItem(key) || '[]');
+
+  var progressScope = document.querySelector('[data-progress-scope]');
+  if(progressScope) {
+    var lessonNumber = Number(progressScope.getAttribute('data-progress-scope'));
+    var btn = document.getElementById('completeBtn');
+    var tip = document.getElementById('complete-tip');
+    if(done.includes(lessonNumber)) {
+      if(btn) { btn.textContent = '✓ 已学习'; btn.style.opacity = '0.7'; btn.style.cursor = 'default'; }
+      if(tip) tip.textContent = '你已完成这一课！';
+    }
+    window.markComplete = function(n) {
+      var entries = JSON.parse(localStorage.getItem(key) || '[]');
+      if(!entries.includes(n)) {
+        entries.push(n);
+        localStorage.setItem(key, JSON.stringify(entries));
+      }
+      if(btn) { btn.textContent = '✓ 已学习'; btn.style.opacity = '0.7'; btn.style.cursor = 'default'; }
+      if(tip) tip.textContent = '✓ 已记录！去首页看看你的进度吧 🎉';
+    };
+  }
+
+  var siteProgress = document.getElementById('site-progress');
+  var progressBar = document.getElementById('progress-bar');
+  var progressText = document.getElementById('progress-text');
+  if(siteProgress && progressBar && progressText) {
+    if(done.length > 0) siteProgress.style.display = 'block';
+    var pct = total ? Math.round(done.length / total * 100) : 0;
+    progressBar.style.width = pct + '%';
+    progressText.textContent = done.length + '/' + total + ' 已完成';
+  }
+
+  document.querySelectorAll('.course-item').forEach(function(item) {
+    var href = item.getAttribute('href') || '';
+    var matchedEntry = progressConfig.entries.find(function(entry) {
+      return entry.url === href && typeof entry.badge === 'number';
+    });
+    if(matchedEntry && done.includes(matchedEntry.badge)) {
+      var arrow = item.querySelector('.course-arrow');
+      if(arrow) arrow.textContent = '✅';
+    }
+  });
+})();
+</script>
+
+<script>
+(function(){
+  var entries = [{"id":"lesson-01","url":"lesson-01.html","title":"Codex 入门：装好、打开、体验一下","navTitle":"第一课 · Codex入门","description":"Mac/Windows · 跟着做30分钟 · 做出第一个网页","group":"course","contentType":"lesson","order":1,"badge":1,"displayBadge":"01","trackProgress":true,"showInSidebar":true,"showInCatalog":true,"searchable":true,"catalogVariant":"lesson"},{"id":"lesson-02","url":"lesson-02.html","title":"上手 Codex：文件夹管理","navTitle":"第二课 · 上手 Codex","description":"文件夹 + 线程 · 组织项目 · 实战入门","group":"course","contentType":"lesson","order":2,"badge":2,"displayBadge":"02","trackProgress":true,"showInSidebar":true,"showInCatalog":true,"searchable":true,"catalogVariant":"lesson"},{"id":"lesson-03","url":"lesson-03.html","title":"AI提问入门：问得好才能答得好","navTitle":"第三课 · AI提问","description":"4步提问法 · 3个实战场景 · 万能模板","group":"course","contentType":"lesson","order":3,"badge":3,"displayBadge":"03","trackProgress":true,"showInSidebar":true,"showInCatalog":true,"searchable":true,"catalogVariant":"lesson"},{"id":"lesson-04","url":"lesson-04.html","title":"Agent是什么？为什么一定要做？","navTitle":"第四课 · Agent","description":"通俗解释 · 面向零基础 · 无技术术语","group":"course","contentType":"lesson","order":4,"badge":4,"displayBadge":"04","trackProgress":true,"showInSidebar":true,"showInCatalog":true,"searchable":true,"catalogVariant":"lesson"},{"id":"lesson-05","url":"lesson-05.html","title":"Skills是什么？怎么用？","navTitle":"第五课 · Skills","description":"Skills入门 · 实战案例 · 安装与使用","group":"course","contentType":"lesson","order":5,"badge":5,"displayBadge":"05","trackProgress":true,"showInSidebar":true,"showInCatalog":true,"searchable":true,"catalogVariant":"lesson"},{"id":"lesson-06","url":"lesson-06.html","title":"国产 vs 国外大模型对比","navTitle":"第六课 · 模型对比","description":"2026年3月最新 · 各模型优势 · 推荐场景 · 选型指南","group":"course","contentType":"lesson","order":6,"badge":6,"displayBadge":"06","trackProgress":true,"showInSidebar":true,"showInCatalog":true,"searchable":true,"catalogVariant":"lesson"},{"id":"lesson-07","url":"lesson-07.html","title":"学习渠道","navTitle":"学习渠道","description":"公众号 · B站UP主 · 学习平台推荐","group":"resource","contentType":"resource","order":7,"badge":7,"displayBadge":"资源","trackProgress":true,"showInSidebar":true,"showInCatalog":false,"searchable":true,"catalogVariant":"lesson"},{"id":"rtk-install-guide","url":"rtk-install-guide.html","title":"RTK 安装与配置教程","navTitle":"RTK 安装与配置教程","description":"重点讲 Windows · 二进制安装 · Claude Code 初始化","group":"resource","contentType":"tool","order":8,"badge":"工具","displayBadge":"工具","trackProgress":false,"showInSidebar":true,"showInCatalog":true,"searchable":true,"catalogVariant":"non-lesson"}];
 
   function openSearch() {
-    document.getElementById('searchOverlay').classList.add('active');
-    setTimeout(function(){ document.getElementById('searchInput').focus(); }, 50);
+    var overlay = document.getElementById('searchOverlay');
+    var input = document.getElementById('searchInput');
+    if(!overlay) return;
+    overlay.classList.add('active');
+    setTimeout(function(){ if(input) input.focus(); }, 50);
   }
+
   function closeSearch() {
-    document.getElementById('searchOverlay').classList.remove('active');
-    document.getElementById('searchInput').value = '';
-    document.getElementById('searchResults').innerHTML = '';
+    var overlay = document.getElementById('searchOverlay');
+    var input = document.getElementById('searchInput');
+    var results = document.getElementById('searchResults');
+    if(overlay) overlay.classList.remove('active');
+    if(input) input.value = '';
+    if(results) results.innerHTML = '';
   }
-  function renderResults(q) {
+
+  window.closeSearch = closeSearch;
+
+  function renderResults(query) {
     var el = document.getElementById('searchResults');
-    if(!q) { el.innerHTML = ''; return; }
-    var html = '', lc = q.toLowerCase();
-    for(var i=0;i<lessons.length;i++) {
-      var l = lessons[i];
-      if(l.t.toLowerCase().indexOf(lc) !== -1 || l.d.toLowerCase().indexOf(lc) !== -1) {
-        var tag = typeof l.n === 'number' ? '<span class="result-num">0'+l.n+'</span>' : '<span class="result-num resource">'+l.n+'</span>';
-        html += '<a href="'+l.u+'" class="search-result-item" onclick="closeSearch()">'+tag+'<div><div class="result-title">'+l.t+'</div><div class="result-type">'+l.d+'</div></div></a>';
+    if(!el) return;
+    if(!query) { el.innerHTML = ''; return; }
+
+    var html = '';
+    var lc = query.toLowerCase();
+    for(var i = 0; i < entries.length; i++) {
+      var entry = entries[i];
+      var title = entry.title || '';
+      var description = entry.description || '';
+      if(title.toLowerCase().indexOf(lc) !== -1 || description.toLowerCase().indexOf(lc) !== -1) {
+        var tagClass = typeof entry.badge === 'number' ? 'result-num' : 'result-num resource';
+        var tag = '<span class="' + tagClass + '">' + entry.displayBadge + '</span>';
+        html += '<a href="' + entry.url + '" class="search-result-item">' + tag + '<div><div class="result-title">' + title + '</div><div class="result-type">' + description + '</div></div></a>';
       }
     }
+
     el.innerHTML = html || '<div class="search-no-result">没有找到相关课程</div>';
   }
 
@@ -682,12 +748,15 @@ if(sidebarToggle) sidebarToggle.onclick = () => sidebar.classList.toggle("expand
   document.querySelectorAll('.search-trigger').forEach(function(trigger){
     trigger.addEventListener('click', openSearch);
   });
-  // 键盘快捷键 Ctrl/Cmd+K
+
   document.addEventListener('keydown', function(e){
-    if((e.ctrlKey||e.metaKey) && e.key==='k') { e.preventDefault(); openSearch(); }
-    if(e.key==='Escape') closeSearch();
+    if((e.ctrlKey || e.metaKey) && e.key === 'k') {
+      e.preventDefault();
+      openSearch();
+    }
+    if(e.key === 'Escape') closeSearch();
   });
-  // 输入监听
+
   if(input) {
     input.addEventListener('input', function(){
       renderResults(this.value);
@@ -695,5 +764,8 @@ if(sidebarToggle) sidebarToggle.onclick = () => sidebar.classList.toggle("expand
   }
 })();
 </script>
-</body>
+
+
+    
+  </body>
 </html>

@@ -1,5 +1,18 @@
 module.exports = function (eleventyConfig) {
-  eleventyConfig.addPassthroughCopy({ public: "." });
+  const passthroughPublicFiles = [
+    "styles.css",
+    "brand-logo.svg",
+    "screenshots",
+    "lesson-07.html",
+    "rtk-install-guide.html",
+    "student-guide.html",
+    "codex-first-lesson.html"
+  ];
+
+  passthroughPublicFiles.forEach((file) => {
+    eleventyConfig.addPassthroughCopy({ [`public/${file}`]: file });
+  });
+
   eleventyConfig.addWatchTarget("public/");
   eleventyConfig.addFilter("json", function (value) {
     return JSON.stringify(value);

@@ -1,0 +1,8 @@
+{"file": ".claude/commands/trellis/finish-work.md", "reason": "Finish work checklist"}
+{"file": ".claude/commands/trellis/check-frontend.md", "reason": "Frontend check spec"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/component-guidelines.md", "reason": "Review shared course/home markup reuse"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/hook-guidelines.md", "reason": "Review inline script behavior consistency"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/state-management.md", "reason": "Review progress and DOM state consistency"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/quality-guidelines.md", "reason": "Review Eleventy source/output and manual check requirements"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/type-safety.md", "reason": "Review plain JS data shapes and safe defaults"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/guides/code-reuse-thinking-guide.md", "reason": "Review centralized metadata reuse and duplication avoidance"}

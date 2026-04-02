@@ -48,6 +48,7 @@ If a visual block appears on multiple pages, keep the markup shape aligned so `s
 
 - Global layout and shared UI styles live in `public/styles.css`
 - Pages can add local overrides with inline `<style>` blocks when the shared stylesheet is not enough
+- In Eleventy layouts, render page-local inline styles after the shared stylesheet link when those styles are meant to override shared rules
 - The visual language is consistent: warm neutral background, orange brand accent, rounded cards, subtle borders, light shadows
 
 Prefer existing shared classes first.
