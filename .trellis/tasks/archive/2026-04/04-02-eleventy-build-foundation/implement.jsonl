@@ -1,0 +1,4 @@
+{"file": ".trellis/workflow.md", "reason": "Project workflow and conventions"}
+{"file": ".trellis/spec/frontend/index.md", "reason": "Frontend development guide"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/directory-structure.md", "reason": "Current public/docs source-output constraints"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/quality-guidelines.md", "reason": "Preserve static-site and docs mirror constraints"}

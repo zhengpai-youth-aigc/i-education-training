@@ -1,0 +1,4 @@
+{"file": ".claude/commands/trellis/finish-work.md", "reason": "Finish work checklist"}
+{"file": ".claude/commands/trellis/check-frontend.md", "reason": "Frontend check spec"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/directory-structure.md", "reason": "Current public/docs source-output constraints"}
+{"file": "/home/hywlzx/projects/github/i-education-training/.trellis/spec/frontend/quality-guidelines.md", "reason": "Preserve static-site and docs mirror constraints"}

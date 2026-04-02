@@ -4,7 +4,10 @@
   "description": "AI教育培训落地页演示项目",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "build": "eleventy",
+    "dev": "eleventy --serve",
+    "build:watch": "eleventy --watch"
   },
   "keywords": [
     "ai",
@@ -14,5 +17,8 @@
   ],
   "author": "",
   "license": "ISC",
-  "type": "commonjs"
+  "type": "commonjs",
+  "devDependencies": {
+    "@11ty/eleventy": "^3.1.5"
+  }
 }

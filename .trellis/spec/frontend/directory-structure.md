@@ -9,9 +9,13 @@
 This project does not use a `src/` directory or a frontend framework.
 The frontend is a static site built from plain HTML, CSS, and inline JavaScript.
 
-The working source lives in `public/`. The `docs/` directory is a mirrored copy used for GitHub Pages deployment.
+During the Eleventy migration:
 
-In practice, new content may be added to `public/` without immediately being copied into `docs/`, so treat `public/` as the source of truth and mirror to `docs/` when you need GitHub Pages to reflect the change.
+- `public/` remains the legacy hand-authored page source and asset source.
+- `site/` is the Eleventy template source for newly migrated pages, layouts, includes, and shared data.
+- `docs/` is the generated deployment output for GitHub Pages.
+
+Do not treat `docs/` as a hand-edited source directory once a page is generated through Eleventy.
 
 ---
 
@@ -28,6 +32,14 @@ public/
 ├── brand-logo.svg
 └── screenshots/
     └── *
+
+site/
+├── _data/
+│   └── *
+├── _includes/
+│   └── layouts/
+│       └── *
+└── *.njk / *.md / *.html
 
 docs/
 ├── index.html
@@ -59,6 +71,7 @@ There are two frontend page families:
 
 When adding a new lesson or course page, follow the shared course-page structure first.
 When adding a one-off landing page or guide, keep it self-contained and explicit.
+When migrating repeated page structures, move shared layout/data concerns into `site/` rather than creating another hand-maintained copy in `public/` and `docs/`.
 
 ---
 
@@ -68,6 +81,7 @@ When adding a one-off landing page or guide, keep it self-contained and explicit
 - Sequential lessons use zero-padded names: `lesson-01.html` through `lesson-07.html`
 - Shared stylesheet is `styles.css`
 - Assets live under `screenshots/` and keep descriptive file names such as `codex-app-mac.png` or `vscode-download.png`
+- Eleventy templates should preserve the existing final flat page names in `docs/`
 
 Avoid creating framework-style folders such as `components/`, `hooks/`, or `pages/` unless the project architecture actually changes.
 
@@ -79,3 +93,4 @@ Avoid creating framework-style folders such as `components/`, `hooks/`, or `page
 - Home page using the same overall layout with more custom sections: `public/index.html`
 - Standalone longform pages: `public/student-guide.html`, `public/codex-first-lesson.html`
 - Shared assets and global styling: `public/styles.css`, `public/screenshots/codex-app-mac.png`
+- Eleventy migration scaffolding: `site/_includes/layouts/base.njk`, `site/_data/site.js`
