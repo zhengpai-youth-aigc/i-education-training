@@ -37,6 +37,8 @@ That makes manual consistency especially important.
 - If progress is tracked across multiple lesson/resource pages, keep the `ai-course-progress` total consistent wherever that value is rendered or written
 - Keep `docs/` aligned with the finalized build output
 - When introducing Eleventy templates, preserve the existing flat final page paths unless the migration explicitly includes URL changes
+- Do not expose internal generation notes, sourcing caveats, retrieval failures, or workflow/process disclaimers inside end-user page content; resolve the issue internally or mention limitations only in the final developer report to the user
+- Resource/tool pages must not occupy numbered lesson slots just because their file name once used a `lesson-*` pattern; use non-lesson metadata (`trackProgress: false`, non-numeric badge, `catalogVariant: "non-lesson"`) and prefer non-lesson URLs when restructuring them
 
 ---
 

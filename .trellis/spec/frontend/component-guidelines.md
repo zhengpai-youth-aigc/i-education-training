@@ -26,6 +26,7 @@ Most course pages are built from the same major blocks:
 - sidebar home-link/menu controls such as `.sidebar-logo-link` and `.sidebar-toggle`
 - homepage-only hero and dashboard blocks such as `.hero-shell`, `.brand-mark`, `.update-banner`, and `.site-progress`
 - mixed catalog entries such as `.course-item.non-lesson` for resource/tool pages surfaced alongside lessons
+- resource-style pages that may still use the shared course-shell layout, but should remain visually labeled as resources rather than numbered lessons
 
 When extending a lesson page, prefer copying an existing section pattern and changing only the content.
 
