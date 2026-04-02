@@ -176,3 +176,39 @@ Aligned local preview, generated output, and Trellis docs with the Eleventy depl
 ### Next Steps
 
 - None - task complete
+
+
+## Session 6: Close out static site refactor
+
+**Date**: 2026-04-02
+**Task**: Close out static site refactor
+
+### Summary
+
+Archived the parent static-site refactor task, removed legacy public page sources, and aligned frontend specs with the Eleventy workflow.
+
+### Main Changes
+
+- Archived the parent brainstorm task for the static site architecture refactor after the Eleventy migration subtasks were completed.
+- Removed the legacy hand-authored `public/*.html` page sources now replaced by `site/` Eleventy sources and `docs/` build output.
+- Updated frontend Trellis specs to reflect the current workflow: `site/` is the source of deployable pages, `public/` is primarily shared assets, and shared search/progress behavior now comes from Eleventy partials/data.
+- Verification: `npm run build` succeeds and regenerates deployable output into `docs/`.
+
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `cb3b2ea` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
