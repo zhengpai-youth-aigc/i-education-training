@@ -8,7 +8,7 @@ Enhance `/trellis:generate-page` so it can distinguish between explanatory image
 
 * The command definition lives at `.claude/commands/trellis/generate-page.md` and a mirrored Cursor version exists at `.cursor/commands/trellis-generate-page.md`.
 * Current command already supports mixed inputs including local files, folders, screenshots, articles, and links, but it does not yet define different handling rules for explanatory vs showcase images.
-* The project's real course source is under `site/`, not `docs/`; generated output is mirrored to `docs/` after build.
+* The project's real course source is under `site/`, not `_site/`; generated output is mirrored to `_site/` after build.
 * Existing course metadata is managed in `site/_data/contentIndex.js`, including sidebar, search, and progress entries.
 * Current lesson pages exist through `lesson-06.html`; `lesson-05.html` is an introductory Skills lesson, while the requested new page is specifically `第七课 - Skills推荐与使用`, which suggests a follow-up/advanced lesson rather than replacing the intro.
 * The input draft folder contains a markdown summary file `draft/高质量skills分享/高质量skills分享.md` plus a large batch of JPEG images under `draft/高质量skills分享/分享6个我觉得应该必装的Skills/`.
@@ -48,7 +48,7 @@ Enhance `/trellis:generate-page` so it can distinguish between explanatory image
 
 * Tests added/updated where appropriate
 * Lint / typecheck / CI green
-* Docs/notes updated if behavior changes
+* _site/notes updated if behavior changes
 * Rollout/rollback considered if risky
 
 ## Out of Scope (explicit)
@@ -63,7 +63,7 @@ Enhance `/trellis:generate-page` so it can distinguish between explanatory image
 * Mirror command file: `.cursor/commands/trellis-generate-page.md`
 * Course pattern examples: `site/lesson-03.html`, `site/lesson-04.html`, `site/lesson-05.html`, `site/lesson-06.html`
 * Course metadata and search/sidebar/progress source: `site/_data/contentIndex.js`, `site/_data/progress.js`
-* Relevant quality constraints: edit source files under `site/` / `public/`, then verify generated `docs/` output
+* Relevant quality constraints: edit source files under `site/` / `public/`, then verify generated `_site/` output
 * Initial draft source discovered: `draft/高质量skills分享/高质量skills分享.md` + image batch directory
 * Deferred follow-up for later sessions:
   - OCR vs multimodal LLM analysis strategy for image understanding

@@ -6,11 +6,11 @@ Refactor the current static HTML site so new pages can be added without manually
 
 ## What I already know
 
-- The current frontend is a plain static site with `public/` as source and `docs/` as GitHub Pages mirror.
+- The current frontend is a plain static site with `public/` as source and `_site/` as GitHub Pages mirror.
 - The backend is only a minimal static file server in `server.js`.
 - Shared UI structure currently exists as repeated HTML blocks instead of reusable templates.
 - The current repo pain is real duplication across many pages, especially when adding a new lesson/resource page.
-- The current project guidelines explicitly warn about repeated search/progress/navigation logic and keeping `public/` and `docs/` aligned.
+- The current project guidelines explicitly warn about repeated search/progress/navigation logic and keeping `public/` and `_site/` aligned.
 
 ## Assumptions (temporary)
 
@@ -39,7 +39,7 @@ Refactor the current static HTML site so new pages can be added without manually
 - [ ] Search index data is generated or shared from one source.
 - [ ] Lesson/resource counts used by progress or homepage listings are not hardcoded in multiple files.
 - [ ] Build output can be published to GitHub Pages as static files.
-- [ ] `docs/` no longer needs manual hand-maintained mirroring for every content change.
+- [ ] `_site/` no longer needs manual hand-maintained mirroring for every content change.
 
 ## Definition of Done (team quality bar)
 
@@ -59,7 +59,7 @@ Refactor the current static HTML site so new pages can be added without manually
 
 ### Repo constraints and observed duplication
 
-- `public/` is the source of truth and `docs/` is a deploy mirror. [repo: `.trellis/spec/frontend/index.md`]
+- `public/` is the source of truth and `_site/` is a deploy mirror. [repo: `.trellis/spec/frontend/index.md`]
 - `server.js` only serves static files from `public/`; there is no real backend contract to preserve. [repo: `server.js`]
 - Sidebar markup is duplicated across lesson pages. [repo: `public/lesson-01.html`]
 - Search overlay and `lessons` data array are duplicated across the homepage and lesson pages. [repo: `public/index.html`, `public/lesson-01.html`]
@@ -82,7 +82,7 @@ Refactor the current static HTML site so new pages can be added without manually
   - Introduce Eleventy as a lightweight static site generator.
   - Move shared sidebar/search/progress/catalog metadata into `_data/`.
   - Use one base layout and a few includes/partials for shared blocks.
-  - Keep final output as static files in `docs/` or another build dir published to GitHub Pages.
+  - Keep final output as static files in `_site/` or another build dir published to GitHub Pages.
 - Pros:
   - Very close to the current static-site mental model.
   - Strong support for layouts, global data, directory data, and generated pages.
@@ -111,7 +111,7 @@ Refactor the current static HTML site so new pages can be added without manually
 - How it works:
   - Keep plain HTML/CSS/JS, but add a small Node build script.
   - Centralize site metadata in JSON/JS.
-  - Generate repeated sidebar/search/catalog/progress snippets into `public/` and `docs/` during build.
+  - Generate repeated sidebar/search/catalog/progress snippets into `public/` and `_site/` during build.
 - Pros:
   - Lowest dependency footprint.
   - Very small conceptual change.
@@ -137,12 +137,12 @@ Refactor the current static HTML site so new pages can be added without manually
 
 Planned phased MVP across multiple sessions:
 
-1. Set up Eleventy build, output to `docs/`, and define base site configuration.
+1. Set up Eleventy build, output to `_site/`, and define base site configuration.
 2. Centralize site/page metadata in one data source.
 3. Extract shared layout blocks: sidebar, search overlay, bottom navigation, homepage catalogs/updates where appropriate.
 4. Migrate all existing pages into the unified Eleventy template system, but do so in several subtasks/sessions to keep risk controlled.
 5. Preserve page-specific content mostly HTML-first during migration to avoid over-abstracting content authoring.
-6. Remove the old hand-maintained `public/` -> `docs/` mirror workflow once the Eleventy output is validated.
+6. Remove the old hand-maintained `public/` -> `_site/` mirror workflow once the Eleventy output is validated.
 
 ## Technical Notes
 

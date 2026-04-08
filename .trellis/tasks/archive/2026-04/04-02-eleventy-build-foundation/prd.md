@@ -8,7 +8,7 @@ Introduce Eleventy as the static site build foundation so the project can migrat
 
 - Install and configure Eleventy in the existing repository.
 - Define a dedicated Eleventy input directory separate from `public/`.
-- Output built files to `docs/` for GitHub Pages publishing.
+- Output built files to `_site/` for GitHub Pages publishing.
 - Preserve flat output paths for existing page URLs and relative asset links.
 - Establish the initial `_includes` and `_data` structure for later migration subtasks.
 - Copy required shared assets into the output during build.
@@ -19,8 +19,8 @@ Introduce Eleventy as the static site build foundation so the project can migrat
 - [ ] `package.json` includes Eleventy dependency and build scripts.
 - [ ] The repository contains a working Eleventy config file.
 - [ ] A dedicated template source directory exists with initial layout/include/data scaffolding.
-- [ ] Running the build generates site output in `docs/`.
-- [ ] Shared assets needed by future migrated pages are copied to `docs/`.
+- [ ] Running the build generates site output in `_site/`.
+- [ ] Shared assets needed by future migrated pages are copied to `_site/`.
 - [ ] The chosen structure does not require changing current page URLs.
 
 ## Technical Notes

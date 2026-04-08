@@ -6,7 +6,7 @@ Fill the Trellis guideline documents based on the actual patterns in this reposi
 
 ## Requirements
 
-- Document the real frontend structure used by the static site in `public/` and mirrored `docs/`
+- Document the real frontend structure used by the static site in `public/` and mirrored `_site/`
 - Document the real backend structure used by the minimal static file server in `server.js`
 - Include concrete examples from the current codebase in every major guideline
 - Describe current limitations honestly, including missing tooling such as TypeScript, tests, and database layers
@@ -23,5 +23,5 @@ Fill the Trellis guideline documents based on the actual patterns in this reposi
 
 - Project type is effectively fullstack, but the backend is only a minimal Node static file server
 - Frontend is plain HTML, CSS, and inline JavaScript, not React or TypeScript
-- `public/` is the source publishing directory and `docs/` is a deployment mirror for GitHub Pages
+- `public/` is the source publishing directory and `_site/` is a deployment mirror for GitHub Pages
 - `netlify.toml` publishes from `public/`

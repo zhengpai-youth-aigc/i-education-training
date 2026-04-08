@@ -22,18 +22,18 @@ Migrate the homepage and the main numbered lesson pages into the Eleventy templa
 
 - Migrate homepage content into Eleventy source under `site/`.
 - Migrate lesson pages `lesson-01.html` through `lesson-06.html` into Eleventy source under `site/`.
-- Preserve current final flat output paths in `docs/`.
+- Preserve current final flat output paths in `_site/`.
 - Preserve shared styling via `styles.css` and reuse existing classes/markup patterns.
 - Preserve sidebar navigation, search overlay behavior, and progress tracking behavior.
 - Reuse centralized Eleventy data from `site/_data/` instead of reintroducing duplicated page-local metadata.
 - Keep page-specific content mostly HTML-first; avoid over-abstracting lesson body content.
 - Keep homepage latest updates and course catalog driven from centralized data/includes.
-- Ensure migrated pages do not require manual mirrored edits in both `public/` and `docs/`.
+- Ensure migrated pages do not require manual mirrored edits in both `public/` and `_site/`.
 
 ## Acceptance Criteria
 
 - [ ] `site/` contains Eleventy source pages for homepage and lessons 01-06.
-- [ ] `docs/index.html` and `docs/lesson-01.html` through `docs/lesson-06.html` are generated from Eleventy.
+- [ ] `_site/index.html` and `_site/lesson-01.html` through `_site/lesson-06.html` are generated from Eleventy.
 - [ ] Sidebar active state works correctly on homepage and each migrated lesson page.
 - [ ] Search overlay works on homepage and each migrated lesson page using centralized search data.
 - [ ] Progress UI still renders correct totals from centralized progress data and lesson completion still updates `ai-course-progress`.
@@ -42,7 +42,7 @@ Migrate the homepage and the main numbered lesson pages into the Eleventy templa
 
 ## Technical Notes
 
-- True source for migrated pages must be `site/`, not hand-edited `docs/`.
+- True source for migrated pages must be `site/`, not hand-edited `_site/`.
 - Follow existing static-site patterns from `public/index.html`, `public/lesson-01.html`, and `public/lesson-06.html`.
 - Use existing shared Eleventy layout and partials where possible:
   - `site/_includes/layouts/base.njk`

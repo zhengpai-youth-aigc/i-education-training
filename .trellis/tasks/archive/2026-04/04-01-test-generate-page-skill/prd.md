@@ -25,4 +25,4 @@
 - 命令定义文件：`.claude/commands/trellis/generate-page.md`
 - Cursor 镜像命令：`.cursor/commands/trellis-generate-page.md`
 - 当前项目页面源目录：`public/`
-- 发布镜像目录：`docs/`
+- 发布镜像目录：`_site/`

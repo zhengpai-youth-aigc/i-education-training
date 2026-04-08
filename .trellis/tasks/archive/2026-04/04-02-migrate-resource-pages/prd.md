@@ -17,13 +17,13 @@ Additional standalone/resource pages may be included if they fit the same migrat
 
 ## Requirements
 
-- Move the source of migrated pages into `site/`, not `docs/`.
+- Move the source of migrated pages into `site/`, not `_site/`.
 - Preserve existing flat output URLs unless a URL change is explicitly required.
 - Reuse the shared Eleventy base layout/includes/data where that improves consistency.
 - Do not force pages with unique structure into unnecessary abstraction.
 - Keep existing assets, screenshots, and relative links working.
 - Keep search/navigation/resource metadata aligned with the centralized Eleventy data model.
-- Avoid maintaining migrated pages manually in both `public/` and `docs/`.
+- Avoid maintaining migrated pages manually in both `public/` and `_site/`.
 
 ## Acceptance Criteria
 

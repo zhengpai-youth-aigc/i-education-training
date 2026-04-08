@@ -22,7 +22,7 @@ npm run type-check
 npm test
 ```
 
-- [ ] `npm start` works and serves the generated `docs/` output locally?
+- [ ] `npm start` works and serves the generated `_site/` output locally?
 - [ ] `npm run lint` passes with 0 errors (if present)?
 - [ ] `npm run type-check` passes with no type errors (if present)?
 - [ ] `npm test` passes (if present)?

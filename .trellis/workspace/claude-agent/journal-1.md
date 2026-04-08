@@ -85,7 +85,7 @@ Migrated the homepage and lessons 01-06 into the shared Eleventy layout/data flo
 - Migrated `index.html` and `lesson-01.html` through `lesson-06.html` into Eleventy source under `site/`.
 - Reused shared sidebar, search, TOC, latest-updates, course-catalog, and progress data instead of duplicated page-local arrays/scripts.
 - Updated `.eleventy.js` passthrough rules so migrated pages are generated from Eleventy while legacy non-migrated pages and shared assets still copy from `public/`.
-- Rebuilt `docs/` output and verified key behaviors with Playwright against a local `docs/` preview server.
+- Rebuilt `_site/` output and verified key behaviors with Playwright against a local `_site/` preview server.
 - Archived the completed Trellis subtask for homepage/core lesson migration.
 
 
@@ -121,7 +121,7 @@ Migrated remaining resource and standalone pages into the Eleventy pipeline and 
 
 - Migrated `lesson-07.html`, `rtk-install-guide.html`, `student-guide.html`, and `codex-first-lesson.html` from passthrough `public/` pages into Eleventy `site/` sources.
 - Removed old passthrough handling in `.eleventy.js` for those pages and updated centralized content metadata plus shared search label logic for non-lesson entries.
-- Rebuilt `docs/` output, smoke-tested the migrated pages with Playwright, and archived the completed `04-02-migrate-resource-pages` Trellis task.
+- Rebuilt `_site/` output, smoke-tested the migrated pages with Playwright, and archived the completed `04-02-migrate-resource-pages` Trellis task.
 
 
 ### Git Commits
@@ -154,9 +154,9 @@ Aligned local preview, generated output, and Trellis docs with the Eleventy depl
 
 ### Main Changes
 
-- Finalized the Eleventy deploy workflow so `npm start` now builds the site and previews the generated `docs/` output instead of relying on the old `public/` preview model.
-- Updated Trellis command docs and backend specs to reflect `site/` as migrated-page source, `docs/` as generated deploy output, and removed stale manual `public/` -> `docs/` mirror guidance.
-- Rebuilt generated `docs/` output, added a root `favicon.ico` passthrough, and verified preview responses for homepage, lesson page, favicon, 404, and path traversal cases.
+- Finalized the Eleventy deploy workflow so `npm start` now builds the site and previews the generated `_site/` output instead of relying on the old `public/` preview model.
+- Updated Trellis command docs and backend specs to reflect `site/` as migrated-page source, `_site/` as generated deploy output, and removed stale manual `public/` -> `_site/` mirror guidance.
+- Rebuilt generated `_site/` output, added a root `favicon.ico` passthrough, and verified preview responses for homepage, lesson page, favicon, 404, and path traversal cases.
 
 
 ### Git Commits
@@ -190,9 +190,9 @@ Archived the parent static-site refactor task, removed legacy public page source
 ### Main Changes
 
 - Archived the parent brainstorm task for the static site architecture refactor after the Eleventy migration subtasks were completed.
-- Removed the legacy hand-authored `public/*.html` page sources now replaced by `site/` Eleventy sources and `docs/` build output.
+- Removed the legacy hand-authored `public/*.html` page sources now replaced by `site/` Eleventy sources and `_site/` build output.
 - Updated frontend Trellis specs to reflect the current workflow: `site/` is the source of deployable pages, `public/` is primarily shared assets, and shared search/progress behavior now comes from Eleventy partials/data.
-- Verification: `npm run build` succeeds and regenerates deployable output into `docs/`.
+- Verification: `npm run build` succeeds and regenerates deployable output into `_site/`.
 
 
 ### Git Commits
@@ -262,7 +262,7 @@ Added the new Skills recommendation lesson, updated page-generation rules for im
 ### Main Changes
 
 - Updated `/trellis:generate-page` command docs to classify explanatory vs showcase images, add a multimodal-first fallback path, and forbid source-material wording from leaking into final reader-facing pages.
-- Added `site/lesson-07.html` plus synced course metadata, homepage updates, lesson navigation, and rebuilt Eleventy output in `docs/`.
+- Added `site/lesson-07.html` plus synced course metadata, homepage updates, lesson navigation, and rebuilt Eleventy output in `_site/`.
 - Verified `npm run build` succeeds and confirmed the final lesson copy no longer includes draft/material/process phrasing.
 
 
@@ -331,7 +331,7 @@ Moved GitHub Pages and local preview to the Eleventy _site output, removed commi
 ### Main Changes
 
 - Added a GitHub Pages Actions workflow that builds the Eleventy site and deploys the generated artifact from the default branch workflow.
-- Migrated the Eleventy output directory and local preview target from `docs/` to `_site`, updated deployment/runtime config, and removed the old checked-in generated `docs/` output.
+- Migrated the Eleventy output directory and local preview target from `_site/` to `_site`, updated deployment/runtime config, and removed the old checked-in generated `_site/` output.
 - Updated README and current Trellis frontend/backend specs so the documented workflow matches the live `_site`-based deployment model.
 - Verified `npm run build`, verified local preview serves `/` from `_site`, verified `/styles.css` returns 200, and verified a missing path returns 404.
 
