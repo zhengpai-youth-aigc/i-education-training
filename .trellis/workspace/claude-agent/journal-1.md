@@ -317,3 +317,39 @@ Added the new Skills recommendation lesson, updated page-generation rules for im
 ### Next Steps
 
 - None - task complete
+
+
+## Session 10: Migrate Pages output to _site
+
+**Date**: 2026-04-08
+**Task**: Migrate Pages output to _site
+
+### Summary
+
+Moved GitHub Pages and local preview to the Eleventy _site output, removed committed docs artifacts, and synced workflow/spec documentation.
+
+### Main Changes
+
+- Added a GitHub Pages Actions workflow that builds the Eleventy site and deploys the generated artifact from the default branch workflow.
+- Migrated the Eleventy output directory and local preview target from `docs/` to `_site`, updated deployment/runtime config, and removed the old checked-in generated `docs/` output.
+- Updated README and current Trellis frontend/backend specs so the documented workflow matches the live `_site`-based deployment model.
+- Verified `npm run build`, verified local preview serves `/` from `_site`, verified `/styles.css` returns 200, and verified a missing path returns 404.
+
+
+### Git Commits
+
+| Hash | Message |
+|------|---------|
+| `697a11a` | (see git log) |
+
+### Testing
+
+- [OK] (Add test results)
+
+### Status
+
+[OK] **Completed**
+
+### Next Steps
+
+- None - task complete
